@@ -7,10 +7,11 @@
     "logo": "bitdefendergravityzone.svg",
     "logo_dark": "bitdefendergravityzone_dark.svg",
     "product_name": "GravityZone",
+    "fips_compliant": false,
     "python_version": "3",
     "product_version_regex": ".*",
     "publisher": "Splunk Community",
-    "license": "Copyright (c) Splunk Community, 2022",
+    "license": "Copyright (c) 2022 Splunk Inc.",
     "app_version": "1.0.0",
     "utctime_updated": "2022-03-22T13:20:25.458448Z",
     "package_name": "phantom_bitdefendergravityzone",
@@ -48,7 +49,6 @@
             "action": "test connectivity",
             "identifier": "test_connectivity",
             "description": "Validate the asset configuration for connectivity using supplied configuration",
-            "verbose": "",
             "type": "test",
             "read_only": true,
             "parameters": {},
@@ -59,7 +59,6 @@
             "action": "delete quarantine",
             "identifier": "delete_quarantine",
             "description": "Delete items from quarantine",
-            "verbose": "",
             "type": "contain",
             "read_only": false,
             "parameters": {
@@ -341,7 +340,7 @@
             "action": "list quarantine",
             "identifier": "list_quarantine",
             "description": "Get list of available quarantined items related to a company",
-            "verbose": "Services allowed are computers for 'Computers and VMs' and exchange for 'Security for Exchange'",
+            "verbose": "Services allowed are computers for 'Computers and VMs' and exchange for 'Security for Exchange'.",
             "type": "generic",
             "read_only": false,
             "parameters": {
@@ -472,5 +471,37 @@
             },
             "versions": "EQ(*)"
         }
-    ]
+    ],
+    "pip_dependencies": {
+        "wheel": [
+            {
+                "module": "beautifulsoup4",
+                "input_file": "wheels/py3/beautifulsoup4-4.9.1-py3-none-any.whl"
+            },
+            {
+                "module": "certifi",
+                "input_file": "wheels/shared/certifi-2021.10.8-py2.py3-none-any.whl"
+            },
+            {
+                "module": "chardet",
+                "input_file": "wheels/shared/chardet-3.0.4-py2.py3-none-any.whl"
+            },
+            {
+                "module": "idna",
+                "input_file": "wheels/shared/idna-2.10-py2.py3-none-any.whl"
+            },
+            {
+                "module": "requests",
+                "input_file": "wheels/shared/requests-2.25.0-py2.py3-none-any.whl"
+            },
+            {
+                "module": "soupsieve",
+                "input_file": "wheels/py3/soupsieve-2.3.1-py3-none-any.whl"
+            },
+            {
+                "module": "urllib3",
+                "input_file": "wheels/shared/urllib3-1.26.9-py2.py3-none-any.whl"
+            }
+        ]
+    }
 }
