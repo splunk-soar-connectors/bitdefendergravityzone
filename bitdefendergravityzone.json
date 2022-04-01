@@ -48,7 +48,6 @@
             "action": "test connectivity",
             "identifier": "test_connectivity",
             "description": "Validate the asset configuration for connectivity using supplied configuration",
-            "verbose": "",
             "type": "test",
             "read_only": true,
             "parameters": {},
@@ -59,7 +58,6 @@
             "action": "delete quarantine",
             "identifier": "delete_quarantine",
             "description": "Delete items from quarantine",
-            "verbose": "",
             "type": "contain",
             "read_only": false,
             "parameters": {
@@ -341,7 +339,7 @@
             "action": "list quarantine",
             "identifier": "list_quarantine",
             "description": "Get list of available quarantined items related to a company",
-            "verbose": "Services allowed are computers for 'Computers and VMs' and exchange for 'Security for Exchange'",
+            "verbose": "Services allowed are computers for 'Computers and VMs' and exchange for 'Security for Exchange'.",
             "type": "generic",
             "read_only": false,
             "parameters": {
