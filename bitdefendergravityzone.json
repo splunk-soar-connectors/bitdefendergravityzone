@@ -15,7 +15,7 @@
     "utctime_updated": "2022-03-22T13:20:25.458448Z",
     "package_name": "phantom_bitdefendergravityzone",
     "main_module": "bitdefendergravityzone_connector.py",
-    "min_phantom_version": "5.2.1.78411",
+    "min_phantom_version": "5.1.0",
     "app_wizard_version": "1.0.0",
     "contributors": [
         {
