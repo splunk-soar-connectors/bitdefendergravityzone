@@ -1,7 +1,7 @@
 # Bitdefender GravityZone
 
 Publisher: Splunk Community \
-Connector Version: 1.0.1 \
+Connector Version: 1.0.2 \
 Product Vendor: Bitdefender \
 Product Name: GravityZone \
 Minimum Product Version: 5.1.0
