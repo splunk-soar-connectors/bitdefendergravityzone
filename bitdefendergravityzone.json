@@ -37,9 +37,9 @@
             "order": 1
         },
         "verify_server_cert": {
-            "description": "Verify server certificate",
+            "description": "Verify the server certificate. Disabling verification can expose the API key to network attackers and should only be used in isolated test environments.",
             "data_type": "boolean",
-            "default": false,
+            "default": true,
             "order": 2
         }
     },

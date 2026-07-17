@@ -139,7 +139,7 @@ class BitdefenderGravityzoneConnector(BaseConnector):
             r = request_func(
                 url,
                 auth=(self._username, ""),  # basic authentication
-                verify=config.get("verify_server_cert", False),
+                verify=config.get("verify_server_cert", True),
                 headers=self._headers,
                 **kwargs,
             )
