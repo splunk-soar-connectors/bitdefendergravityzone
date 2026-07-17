@@ -11,7 +11,7 @@
     "python_version": "3",
     "product_version_regex": ".*",
     "publisher": "Splunk Community",
-    "license": "Copyright (c) 2022-2025 Splunk Inc.",
+    "license": "Copyright (c) 2022-2026 Splunk Inc.",
     "app_version": "1.0.2",
     "utctime_updated": "2025-04-28T17:50:20.968289Z",
     "package_name": "phantom_bitdefendergravityzone",
@@ -472,5 +472,11 @@
             },
             "versions": "EQ(*)"
         }
-    ]
+    ],
+    "pip39_dependencies": {
+        "wheel": []
+    },
+    "pip313_dependencies": {
+        "wheel": []
+    }
 }
