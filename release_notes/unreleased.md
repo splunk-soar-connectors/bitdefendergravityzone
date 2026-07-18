@@ -1,4 +1,4 @@
 **Unreleased**
 
-* - Enabled TLS server certificate verification by default in the asset configuration.
-* - Applied the secure TLS verification default when legacy asset data omits the setting.
+* Enabled TLS server certificate verification by default in the asset configuration.
+* Applied the secure TLS verification default when legacy asset data omits the setting.
