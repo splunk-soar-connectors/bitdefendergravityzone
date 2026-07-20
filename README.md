@@ -1,9 +1,9 @@
 # Bitdefender GravityZone
 
-Publisher: Splunk Community \
-Connector Version: 1.0.2 \
-Product Vendor: Bitdefender \
-Product Name: GravityZone \
+Publisher: Splunk Community <br>
+Connector Version: 1.0.2 <br>
+Product Vendor: Bitdefender <br>
+Product Name: GravityZone <br>
 Minimum Product Version: 5.1.0
 
 This app integrates with Bitdefender GravityZone to execute various containment, corrective and investigative actions
@@ -16,21 +16,21 @@ VARIABLE | REQUIRED | TYPE | DESCRIPTION
 -------- | -------- | ---- | -----------
 **base_url** | required | string | URL (e.g. https://cloud.gravityzone.bitdefender.com/api) |
 **api_key** | required | password | API Key |
-**verify_server_cert** | optional | boolean | Verify server certificate |
+**verify_server_cert** | optional | boolean | Verify the server certificate. Disabling verification can expose the API key to network attackers and should only be used in isolated test environments. |
 
 ### Supported Actions
 
-[test connectivity](#action-test-connectivity) - Validate the asset configuration for connectivity using supplied configuration \
-[delete quarantine](#action-delete-quarantine) - Delete items from quarantine \
-[unquarantine computer](#action-unquarantine-computer) - Unquarantine Computers and Virtual Machines \
-[unquarantine exchange](#action-unquarantine-exchange) - Unquarantine items for Exchange Servers \
+[test connectivity](#action-test-connectivity) - Validate the asset configuration for connectivity using supplied configuration <br>
+[delete quarantine](#action-delete-quarantine) - Delete items from quarantine <br>
+[unquarantine computer](#action-unquarantine-computer) - Unquarantine Computers and Virtual Machines <br>
+[unquarantine exchange](#action-unquarantine-exchange) - Unquarantine items for Exchange Servers <br>
 [list quarantine](#action-list-quarantine) - Get list of available quarantined items related to a company
 
 ## action: 'test connectivity'
 
 Validate the asset configuration for connectivity using supplied configuration
 
-Type: **test** \
+Type: **test** <br>
 Read only: **True**
 
 #### Action Parameters
@@ -45,7 +45,7 @@ No Output
 
 Delete items from quarantine
 
-Type: **contain** \
+Type: **contain** <br>
 Read only: **False**
 
 #### Action Parameters
@@ -75,7 +75,7 @@ summary.total_objects_successful | numeric | | |
 
 Unquarantine Computers and Virtual Machines
 
-Type: **correct** \
+Type: **correct** <br>
 Read only: **False**
 
 #### Action Parameters
@@ -105,7 +105,7 @@ summary.total_objects_successful | numeric | | |
 
 Unquarantine items for Exchange Servers
 
-Type: **correct** \
+Type: **correct** <br>
 Read only: **False**
 
 #### Action Parameters
@@ -139,7 +139,7 @@ summary.total_objects_successful | numeric | | |
 
 Get list of available quarantined items related to a company
 
-Type: **generic** \
+Type: **generic** <br>
 Read only: **False**
 
 Services allowed are computers for 'Computers and VMs' and exchange for 'Security for Exchange'.
@@ -181,7 +181,7 @@ ______________________________________________________________________
 
 Auto-generated Splunk SOAR Connector documentation.
 
-Copyright 2025 Splunk Inc.
+Copyright 2026 Splunk Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
