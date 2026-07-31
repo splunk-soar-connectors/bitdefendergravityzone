@@ -37,7 +37,7 @@
             "order": 1
         },
         "verify_server_cert": {
-            "description": "Verify the server certificate. Disabling verification can expose the API key to network attackers and should only be used in isolated test environments.",
+            "description": "Verify the server certificate. Disabling verification exposes the API key to interception and is intended only for isolated lab environments using on-premises GravityZone appliances with private certificate authorities; configure the trusted private CA instead whenever possible.",
             "data_type": "boolean",
             "default": true,
             "order": 2
