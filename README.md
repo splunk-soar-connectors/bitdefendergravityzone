@@ -16,7 +16,7 @@ VARIABLE | REQUIRED | TYPE | DESCRIPTION
 -------- | -------- | ---- | -----------
 **base_url** | required | string | URL (e.g. https://cloud.gravityzone.bitdefender.com/api) |
 **api_key** | required | password | API Key |
-**verify_server_cert** | optional | boolean | Verify the server certificate. Disabling verification can expose the API key to network attackers and should only be used in isolated test environments. |
+**verify_server_cert** | optional | boolean | Verify the server certificate. Disabling verification exposes the API key to interception and is intended only for isolated lab environments using on-premises GravityZone appliances with private certificate authorities; configure the trusted private CA instead whenever possible. |
 
 ### Supported Actions
 
